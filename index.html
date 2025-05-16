@@ -1,82 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Jua&display=swap" rel="stylesheet">
-
+    <title>Currículo de Optimus Jaime</title>
 
     <style>
-
-        h1
-        {
-            color: #8F87F1;
-
-            font-family: "Jua", sans-serif;
-            font-weight: 200;
-        }
-        ul 
-        {
-            display: flex;      
-            flex-direction: row;
-            list-style-type: none;
-            justify-content: center;
-            background-color: #FED2E2;
-        }
-        
-        ul li
-        {
-            background-color: #FED2E2;
-            margin-right: 10px;
+        main {
+            background-color: white;
+            padding-left: 10px;
         }
 
-        ul li a
-        {
-            text-decoration: none;
-            color: #8F87F1;
-            padding: 10px;
-            display: block;
-            transition: all 0.5s ease;
+        body {
+            background-color: #3A3845;
+            line-height: 1.5;
+            color: #444;
+            width: 60%;
+            margin: 0 auto;
+            padding: 2% 0;
 
-            font-family: "Jua", sans-serif;
-            font-weight: 200;
-            font-size: large;
         }
 
-        ul li a:hover
-        {
-            background-color: #FFEDFA;
+        h1 {
+            color: rgb(140, 76, 8);
         }
 
-        p
-        {
-            font-family: "Jua", sans-serif;
-            font-weight: 200;
-            font-size: large;
-            text-align: left;
+        h2 {
+            color: rgb(140, 76, 8);
         }
 
+        .sessao {
+            margin-top: 0px;
+            padding-bottom: 5px;
+            border-top: solid 1px gray;
+        }
     </style>
 </head>
+
 <body>
+    <main>
+        <img src="imagens/robo.png" alt="Robô" height="150" width="150">
+        <h1>Optimus Jaime</h1>
+        <section class="sessao perfil">
+            <h2>Perfil</h2>
+            <p>Programador multifacetado com múltiplas experiências em múltiplas áreas. Comecei a programar desde o
+                momento de minha criação (7 anos atrás). Consigo acessar qualquer informação sobre a linguagem que está
+                sendo trabalhada, assim não tenho limites em relação a projetos. Grande experiência com sistemas de alto
+                nível, com margem mínima para erros.</p>
+            <p>Procuro um lugar onde posso descobrir novas áreas para aplicar a programação de maneira que contribua
+                significativamente na vida dos usuários. Acredito que a programação, se aplicada da maneira correta,
+                pode ser tão útil quanto a medicina ou a engenharia.</p>
+            <section class="sessao competencias">
+                <h2>Principais competências</h2>
+                <ul>
+                    <li>Computação quântica</li>
+                    <li>Velocidade</li>
+                    <li>Desenvolvimento Front-End</li>
+                    <li>Programação em C# e Phyton</li>
+                    <li>Robótica doméstica/caseira</li>
+                </ul>
+            </section>
 
-    <ul>
-        <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-        <li><a href="http://127.0.0.1:5500/sobreMim.html">Sobre mim</a></li>
-        <li><a href="http://127.0.0.1:5500/projetos.html">Projetos e contato</a></li>
+        </section>
+        <section class="sessao formacao">
+            <h2>Formação acadêmica</h2>
+            <p>Graduação em Sistemas de Informação pela <a href="https://ufu.br/">Universidade Federal de Uberlândia
+                    (2018)</a>
+                e Mestrado em Ciências da Computação pela <a href="https://www5.usp.br/">Universidade de São
+                    Paulo(2020)</a></p>
+            <h2>Experiência Profissional</h2>
+            <ol>
+                <li>Microsoft (2018-2020)
 
-    </ul>
+                    <ul>
+                        <li>Robótica quântica</li>
+                        <li>Programação em C# e Arduino</li>
+                    </ul>
 
-    <h1>Desenvolvimento web</h1>
+                </li>
 
-    <p>Essa página se refere a matéria de Desenvolvimento Web no Instituto Federal do Paraná - Campus Foz do Iguaçu. O desenvolvimento web é uma área da tecnologia responsável pela criação, codificação e programação de sites, aplicativos e seus respectivos elementos de linguagem. Também é responsável pela criação e integração de softwares, bancos de dados e qualquer outra ferramenta relacionada ao uso de tecnologia, estruturando cada recurso para garantir sua funcionalidade.
+                <li>Polícia Interplanetária (2020-)
 
-        Seus profissionais são chamados de desenvolvedores ou programadores. Na carreira do desenvolvimento web, há várias especializações — full stack, front-end e back-end—  assim como especialistas em infraestrutura de sistemas, bancos de dados, entre diversas outras áreas.</p>
+                    <ul>
+                        <li>Javascript, HTML e CSS</li>
+                        <li>Phyton</li>
+                    </ul>
+                </li>
 
-    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" alt="Desenvolvimento Web">
+            </ol>
+            <a href="experiencias.html">Veja as experiências profissionais em detalhe</a>
+        </section>
+        <section class="sessao contato">
+            <h2>Contato</h2>
+            <img src="imagens/endereco.png" alt="Endereco" height="30" width="30">
+            <p>Foz do Iguaçu, Brasil, Terra</p>
+            <a href="https://telefone.com.br"><img src="imagens/telefone.png" alt="Telefone" height="30"
+                    width="30">(45)92001-1727</a>
+            <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrlZjbqsjHMpsLMJmnnWTTrszGNvQMkxfpSPFkRxRrpSqShNCKdZlzsNmpGjpRHCWhCrmB"><img
+                    src="imagens/email.png" alt="Email" height="30" width="30">optimus.jaime@gmail.com</a>
+        </section>
+    </main>
 </body>
+
 </html>
