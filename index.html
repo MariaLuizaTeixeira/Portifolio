@@ -1,84 +1,142 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
-    <link rel="stylesheet" href="portifolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <title>Portifólio - página inicial</title>
+
     <style>
-        ul {
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            justify-content: center;
-            background-color: #604652;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        ul li {
-            background-color: #604652;
-            margin-right: 10px;
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: "DM Serif Text";
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
         }
 
         ul li a {
-            text-decoration: none;
-            color: #8F87F1;
-            padding: 10px;
+            padding: 30px;
             display: block;
-            transition: all 0.5s ease;
-
-            font-family: "Lexend", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 200;
-            font-size: large;
+            text-decoration: none;
         }
 
-        ul li a:hover {
-            background-color: #FFEDFA;
+        header img {
+            height: 30px;
+            display: flex;
         }
 
-        h1 {
-            font-family: "Lexend", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 200;
-            color: #735557;
-            font-size: 50px;
+        .redes{   
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 20px;
         }
 
-        p {
-            font-size: large;
+        main {
+            flex: 1;
         }
 
-        img {
+        .apresentacao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .nome {
+            padding-left: 40px;
+        }
+
+        .foto {
+            padding-right: 60px;
+        }
+
+        .foto img {
             height: 300px;
         }
-        
-        main{
-            background-color: white;
+
+        footer {
+            background-color: #C9B194;
+            padding: 5px;
+            padding-left: 80px;
+        }
+
+        .contato {
+            padding-bottom: 10px;
+        }
+
+        .info {
+            padding-bottom: 3px;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li><a href=index.html>Home</a></li>
-        <li><a href="sobreMim.html">Sobre mim</a></li>
-        <li><a href="projetos.html">Projetos e contato</a></li>
+    <header>
+        <menu>
+            <ul>
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="sobre_mim.html">Sobre mim</a></li>
+            </ul>
+        </menu>
+        <div class="redes">
+           <a href="https://www.linkedin.com/in/maria-ramos-teixeira-9814882a1/"><img src="linkedin.png" alt="linkedin"></a> 
+            <a href="https://github.com/MariaLuizaTeixeira"><img src="github.png" alt="github"></a>
+        </div>
+    </header>
 
-    </ul>
-
-    <h1>Desenvolvimento web</h1>
-    <main> 
-        <p>Essa página se refere a matéria de Desenvolvimento Web no Instituto Federal do Paraná - Campus Foz do Iguaçu. O
-        desenvolvimento web é uma área da tecnologia responsável pela criação, codificação e programação de sites,
-        aplicativos e seus respectivos elementos de linguagem. Temos essa aula 3x semana, totalizando 150 minutos.</p>
+    <main>
+        <div class="apresentacao">
+            <div class="nome">
+                <p>Olá, eu sou </p>
+                <h1> Maria Luiza Teixeira</h1>
+                <p>Estudante do IFPR e programadora</p>
+            </div>
+            <div class="foto"><img src="foto.jpg" alt="Foto"></div>
+        </div>
     </main>
-    
 
+    <footer>
+        <div class="contato">
+            <h4>Contato</h4>
+        </div>
+        <div class="info 1">
+            <h5>Email</h5>
+        </div>
+        <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmCKcbVwMVjbJSMGCctvjPQjrcCjfGVmsDpFKKZvtrZDNrNxWhxGbNgKLnQMnTQdtqHjFzG">marialuizat.ifpr2024@gmail.com</a>
+        <div class="info 2">
+            <h5>Endereço</h5>
+        </div>
+        <p>Rua Joaquim Montegute, 230, Jardim Itaipu</p>
+    </footer>
 </body>
 
 </html>
